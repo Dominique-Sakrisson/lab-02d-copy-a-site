@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav-container{
+    padding: 25px 0;
+   border-bottom: 2px solid rgba(0,0,0,.6);
+   text-align: center; 
+}
+.nav-container{
+    text-align: center; 
+   
+}
+.nav-container li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+}
+
+.nav-right{
+    position: relative;
+    right:30px;
+}
+
+.logo-img{
+    position: relative;
+    display:inline;   
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color:gold;
+}
+
+.landing{
+    background-image: url("https://financesonline.com/uploads/2014/03/mansion.jpg");
+    background-position: center;
+
+    height: 400px;
+    text-align: center;
+}
+.welcome{
+    padding: 0;
+    margin: 0;
+  
+}
+.welcome h1{
+    position: relative;
+    top: 150px;
+    font-size: 2.5rem;
+}
+main{
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+}
+main h1{
+    color: white;
+}
+main input{
+    width: 60%;
+    position: relative;
+    top: 135px;
+}
+.help-info ul{
+    list-style: none;
+}
+.help-info li{
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+.option-text{
+   margin: 5px;
+}
+.box-option{
+    
+    font-size: 1.2em;
+    border: 3px outset rgba(0,0,0,.7);
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
