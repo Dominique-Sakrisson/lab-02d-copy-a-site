@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -15,47 +17,102 @@
             <li><a href="#">Home Loans</a></li>
             <li><a href="#">Agent Finder</a></li>
         </ul>
-        <span class="logo-img"><img src="zillowLogo.png" width="150px" alt=""></span>
-        <ul class="nav nav-right">
+
+        <span class="logo-img"><img src="assets/images/zillowLogo.png" width="150px" alt=""></span>
+
+        <ul class="nav nav-right rel">
             <li><a href="#">Manage Rentals</a></li>
             <li><a href="#">Advertise</a></li>
-            <li><a href="#">Sign in or Join</a></li>
+            
             <li><a href="#">Help</a></li>
+            <li class="rel nav-icon"><img src="assets/images/download.svg" width="30px" alt="some img"></li>
         </ul>
     </nav>
-    <main>
-        <section class="landing">
-            <div class="welcome">
-                <h1>Home has never been more important</h1>
-                <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code">
+    <main class="center">
+        <section class="banner center rel">
+            <div class="banner-header">
+                <h1 class="rel">When you're ready for a change, we're ready to help.</h1>
+                <input class="rel banner-input" type="text" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                <img class="search-icon rel" src="assets/images/search.svg" alt="">
             </div>
         </section>
-        <section class="help-info">
-            <h2>Have questions about buying, selling, or renting during COVID-19?</h2>
+        
+        <section class="help-info center">
+            <span class="help-span">Whether you’re buying, selling or renting, we can help you move forward.</span>
             <ul>
                 <li>
                     <a href="#">
                         <div class="box-option">
-                            <span class="option-text">We have the most knowledgable agents</span> 
+                            <img src="https://www.zillowstatic.com/s3/homepage/static/Buy_a_home.png" width="277px"  alt=""><br/>
+                            <span>Buy a home</span>
+                            <p>
+                                Home buying has never been so seamless, start online or give us a call today
+                            </p>
+                            <button>Search homes</button> 
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <div class="box-option">
-                            <span class="option-text">We have the right answers for your circumstance</span>
+                            <img src="https://www.zillowstatic.com/s3/homepage/static/Sell_a_home.png" width="277px"  alt=""><br/>
+                            <span>Sell a home</span>
+                            <p>
+                                We have the network, and the experience to sell your home faster than anybody
+                            </p>
+                            <button>See your options</button> 
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <div class="box-option">
-                            <span class="option-text">We have the fastest closing times</span>
+                            <img src="https://www.zillowstatic.com/s3/homepage/static/Rent_a_home.png" width="277px"  alt=""><br/>
+                            <span >Rent a home</span>
+                            <p>
+                                Virtual tours of any place you like, verified owners to guarantee your comfort
+                            </p>
+                            <button>Find rentals</button> 
                         </div> 
                     </a>
                 </li>
             </ul>
-        </section>    
+        </section>
+
+        <section class="drop-downs">
+            <div class="drop-head">
+              real estate
+              <img class="drop-icon rel" src="assets/images/chevron-down.svg" alt="dropdown arrow icon">
+              <ul class="drop-list rel">
+                <li>hey</li>
+                <li>hello</li>
+              </ul>
+            </div>
+            <div class="drop-head">
+              rentals
+              <img class="drop-icon rel" src="assets/images/chevron-down.svg" alt="dropdown arrow icon">
+              <ul class="drop-list rel">
+                <li>hey</li>
+                <li>hello</li>
+              </ul>
+            </div>
+            <div class="drop-head">
+              mortgage rates
+              <img class="drop-icon rel" src="assets/images/chevron-down.svg" alt="dropdown arrow icon">
+              <ul class="drop-list rel">
+                <li>hey</li>
+                <li>hello</li>
+              </ul>
+            </div>
+            <div class="drop-head">
+              browse homes
+              <img class="drop-icon rel" src="assets/images/chevron-down.svg" alt="dropdown arrow icon">
+              <ul class="drop-list rel">
+                <li>hey</li>
+                <li>hello</li>
+              </ul>
+            </div>
+        </section>
     </main>    
     
 </body>

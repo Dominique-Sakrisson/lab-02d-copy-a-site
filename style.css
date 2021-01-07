@@ -2,10 +2,17 @@ body{
     padding: 0;
     margin: 0;
 }
+.center{
+    text-align: center;
+    margin: auto;
+}
+.rel{
+    position: relative;
+}
 .nav-container{
-    padding: 25px 0;
-   border-bottom: 2px solid rgba(0,0,0,.6);
-   text-align: center; 
+    padding: 10px 0;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
 }
 .nav-container{
     text-align: center; 
@@ -19,7 +26,7 @@ body{
 .nav{
     list-style: none;
     display: inline;
-    font-weight: bold;
+
 }
 
 .nav-right{
@@ -28,46 +35,66 @@ body{
 }
 
 .logo-img{
-    position: relative;
+    margin: 0 100px;
     display:inline;   
+}
+.nav-icon{
+    top: 5px;
 }
 a{
     text-decoration: none;
     color: #000000;
 }
-a:hover{
-    color:gold;
+
+
+.banner{
+    background-image: url("https://www.zillowstatic.com/s3/homepage/static/_Desktop_Overlay_ReadyChange.jpg");
+
+  background-position: center;
+ 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 450px;
 }
 
-.landing{
-    background-image: url("https://financesonline.com/uploads/2014/03/mansion.jpg");
-    background-position: center;
+.banner-header{
+    bottom: 20px;
+    font-size: 1.5rem;
+    color: #FFF;
+    margin: auto;
+}
 
-    height: 400px;
-    text-align: center;
+.banner-header h1{
+    width: 30%
 }
-.welcome{
-    padding: 0;
-    margin: 0;
-  
+.banner input{
+    margin-top: 20px;
+    width: 35%;
+    top: 50px;
+    padding: 25px;
 }
-.welcome h1{
-    position: relative;
-    top: 150px;
-    font-size: 2.5rem;
+.search-icon{
+    top:60px;
+    right: 40px;
+}
+
+::placeholder{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
 }
 main{
-    position: relative;
-    bottom: 35px;
     text-align: center;
 }
+
 main h1{
-    color: white;
+    width: 40%;
+    margin: 0 auto;
+    top: 40px;
 }
-main input{
-    width: 60%;
-    position: relative;
-    top: 135px;
+.help-info{
+    background-color:rgba(0,0,0, .05) ;
+    padding-bottom: 50px;
 }
 .help-info ul{
     list-style: none;
@@ -77,14 +104,97 @@ main input{
     margin: 0 20px;
     
 }
-.option-text{
-   margin: 5px;
+.help-span{
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto;
+    line-height: 24px;
+    font-size: 24px;
+    width: 30%;
+   
 }
+
 .box-option{
-    
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    border: 3px outset rgba(0,0,0,.7);
-    width: 150px;
-    height: 100px;
+    border: 2px outset rgba(0,0,0,.1);
+    border-radius: 5px;
     overflow: hidden;
+    box-shadow: inset;
+    width: 300px;
+    height: 350px;
+    padding-top: 20px;
+    transition: width .1s, height .1s;
+    background-color: #FFF;
 }
+.help-info button{
+    margin-bottom:10px;
+    
+    background-color: #FFF;
+    color: rgb(32, 32, 255);
+    padding: 10px;
+}
+.box-option:hover {
+    width: 330px;
+    height: 380px;
+}
+
+.box-option:hover button{
+    background-color: rgb(32, 32, 255);
+    color: #FFF;
+}
+
+
+.drop-downs{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.drop-head{
+    border-left: 1px solid rgba(0,0,0,.3 );
+    max-height: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.drop-downs div:nth-child(1){
+    border: none;
+}
+.drop-head:hover .drop-icon{
+    width: 30px;
+    height: 30px;
+}
+.drop-icon{
+    top: 8px;
+}
+.drop-downs button{
+    border: none;
+
+}
+.drop-downs ul{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.drop-list{
+    list-style: none;
+    display: none;
+    bottom: 15px;
+    left: 25px;
+    line-height: 2rem;
+}
+.drop-list li{
+    display: block;
+    width: 200px;
+}
+.drop-list:hover{
+    display: block;
+    margin-top: 20px;
+}
+.drop-head:hover .drop-list{
+    display: block;
+    width: 50px;
+}
+
+
+
